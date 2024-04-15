@@ -4,11 +4,11 @@ var clicks = 0;
 var colour = ['#0000FF', '#FF0000', '#00FF00', '#FFFF00', '#FF00FF', '#00FFFF'];
 var muted = ['#8a8cff', '#ff8a8a', '#8aff8a', '#ffffb3', '#ff8aff', '#8affff'];
 var adjacentIndices = [
-        { row: 0, col: 0 },
-        { row: -1, col: 0 },
-        { row: +1, col: 0 },
-        { row: 0, col: -1 },
-        { row: 0, col: +1 }
+    { row: 0, col: 0 },
+    { row: -1, col: 0 },
+    { row: +1, col: 0 },
+    { row: 0, col: -1 },
+    { row: 0, col: +1 }
 ];
 
 function setupPlayers() {
@@ -33,7 +33,7 @@ function buttonClicked(i, j) {
         var adjacentButton = document.querySelector('.button-container button[data-row="' + (index.row + i) + '"][data-col="' + (index.col + j) + '"]');
         if (adjacentButton && index.row == 0 && index.col == 0) {
             adjacentButton.style.backgroundColor = colour[currentPlayer];
-            adjacentButton.style.border = '2px solid black'; // Highlight the button with a black border
+            adjacentButton.style.border = '2px solid black';
         } else if (adjacentButton && adjacentButton.style.border == '2px solid black') {
             adjacentButton.style.backgroundColor = colour[currentPlayer];
         } else if (adjacentButton) {
@@ -46,7 +46,7 @@ function buttonClicked(i, j) {
 
     if (clicks >= 81) {
         var colorCounts = {};
-        buttons.forEach(function(button) {
+        buttons.forEach(function (button) {
             var color = button.style.backgroundColor;
             if (color !== '') {
                 colorCounts[color] = (colorCounts[color] || 0) + 1;
@@ -61,7 +61,7 @@ function buttonClicked(i, j) {
         scoreDiv.className = 'score-container';
 
         var message = "<h2>Scores</h2>";
-        sortedColorCounts.forEach(function(entry) {
+        sortedColorCounts.forEach(function (entry) {
             var color = entry[0];
             var tilesCaptured = entry[1];
             message += "<p style='background-color:" + color + ";'>Tiles Captured: " + tilesCaptured + "</p>";

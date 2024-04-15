@@ -32,8 +32,8 @@ function checkWinner() {
             gameOver = true;
             const winner = cells[a].textContent;
             setTimeout(() => {
-               alert(`Player ${winner} wins!`);
-           }, 200);
+                alert(`Player ${winner} wins!`);
+            }, 200);
             return;
         }
     }

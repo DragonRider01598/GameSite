@@ -5,7 +5,7 @@ const savedTheme = localStorage.getItem('mode')
 if (savedTheme && savedTheme != 'dark') {
    changeMode()
 }
-function changeMode(){
+function changeMode() {
    const body = document.body
    body.classList.toggle('light')
    body.classList.toggle('dark')

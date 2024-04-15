@@ -4,22 +4,23 @@
 
 .dark {
    --title: #666;
-   --bg : #222831;
+   --bg: #222831;
    --txt: #00ff00;
    --but: #000077;
    --buh: #0000dd;
 }
+
 .light {
    --title: #C51605;
-   --bg : #ffe797;
+   --bg: #ffe797;
    --txt: #181a1f;
    --but: #F4D160;
    --buh: #FD8D14;
 }
 
 body {
-   font-family: 'Consolas', monospace; 
-   background-color: var(--bg); 
+   font-family: 'Consolas', monospace;
+   background-color: var(--bg);
 }
 
 header {
@@ -30,7 +31,7 @@ header {
 header button {
    color: var(--title);
    font-size: 36px;
-   background-color: var(--bg); 
+   background-color: var(--bg);
    color: var(--txt);
    padding: 15px;
    border: none;
@@ -41,7 +42,7 @@ header button {
 }
 
 header button:hover {
-   background-color: var(--buh); 
+   background-color: var(--buh);
 }
 
 main {
@@ -58,7 +59,7 @@ main {
 
 .games a {
    text-decoration: none;
-   background-color: var(--but); 
+   background-color: var(--but);
    color: var(--txt);
    padding: 15px 30px;
    border-radius: 5px;

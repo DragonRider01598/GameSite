@@ -5,6 +5,7 @@
    --sbg: #5C8374;
    --stx: #1B4242;
 }
+
 .dark {
    --bg: #070F2B;
    --txt: #9290C3;
@@ -13,12 +14,12 @@
    --stx: #9EC8B9;
 }
 
-.mode{
+.mode {
    cursor: pointer;
    padding: 10px;
    border-radius: 25px;
    text-align: center;
-   display:inline-block;
+   display: inline-block;
 }
 
 .mode:hover {

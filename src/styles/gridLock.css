@@ -1,0 +1,114 @@
+.light {
+   --bg: #535C91;
+   --txt: #1B1A55;
+   --but: #E0CCBE;
+   --sbg: #5C8374;
+   --stx: #1B4242;
+}
+.dark {
+   --bg: #070F2B;
+   --txt: #9290C3;
+   --but: #747264;
+   --sbg: #092635;
+   --stx: #9EC8B9;
+}
+
+.mode{
+   cursor: pointer;
+   padding: 10px;
+   border-radius: 25px;
+   text-align: center;
+   display:inline-block;
+}
+
+.mode:hover {
+   color: var(--bg);
+   background-color: var(--txt);
+}
+
+body {
+   background-color: var(--bg);
+   color: var(--txt);
+   text-align: center;
+}
+
+.container {
+   text-align: center;
+   margin-top: 50px;
+}
+
+.container h2 {
+   font-size: 24px;
+   margin-bottom: 10px;
+}
+
+.container input[type="number"] {
+   padding: 8px 12px;
+   font-size: 16px;
+   background-color: var(--but);
+}
+
+.container button {
+   padding: 10px 20px;
+   font-size: 16px;
+   background-color: #007bff;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   transition: background-color 0.3s;
+}
+
+.container button:hover {
+   background-color: #0056b3;
+}
+
+.grid-container {
+   display: flex;
+   justify-content: center;
+   height: 100vh;
+}
+
+.button-container {
+   display: grid;
+   grid-template-columns: repeat(9, auto);
+   gap: 10px;
+}
+
+.button-container button {
+   padding: 10px;
+   width: 40px;
+   height: 40px;
+   font-size: 16px;
+   background-color: var(--but);
+   border: 1px solid var(--txt);
+   border-radius: 50%;
+   cursor: pointer;
+   transition: background-color 0.3s, color 0.5s;
+}
+
+.button-container button:hover {
+   background-color: var(--bg);
+}
+
+.score-container {
+   width: 300px;
+   margin: 50px auto;
+   padding: 20px;
+   background-color: var(--sbg);
+   border: 3px solid var(--stx);
+   border-radius: 4px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.score-container h2 {
+   color: var(--stx);
+   font-size: 24px;
+   margin-bottom: 10px;
+}
+
+.score-container p {
+   color: #FFFFFF;
+   font-size: 16px;
+   padding: 10px;
+   margin: 0;
+}

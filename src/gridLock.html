@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>GridLock</title>
+   <link rel="stylesheet" href="./styles/gridLock.css">
+</head>
+<body class="light">
+   <h1 class="mode">GridLock</h1>
+   <div class="container" id="playerCountContainer">
+      <h2>Number of players</h2>
+      <input type="number" id="playerCountInput">
+      <button onclick="setupPlayers()">Next</button>
+  </div>
+   <div class="grid-container" style="display: none;">
+      <div class="button-container"></div>
+   </div>
+   <script src="./scripts/gridLock.js"></script>
+   <script src="./scripts/mode.js"></script>
+</body>
+</html>
